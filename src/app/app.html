@@ -27,25 +27,27 @@
     </section>
   </div>
 
-  <button class="call-me-btn" (click)="callMe()">
-    <img src="/assets/smartphone.png" alt="phone icon" />
+  <div class="contact-wrapper">
+    <button (click)="callMe()">
+      <img src="/assets/smartphone.png" alt="phone icon" />
 
-    <span>Call my human</span>
-  </button>
+      <span>Call my human</span>
+    </button>
 
-  <span class="or-separator">OR</span>
+    <span>OR</span>
 
-  <section class="social-media-section">
-    <h3>MESSAGE VIA SOCIAL MEDIA</h3>
+    <section>
+      <h3>MESSAGE VIA SOCIAL MEDIA</h3>
 
-    @for (social of info.socials; track social.id) {
-      <div class="social">
-        <img src="{{ social.iconPath }}" alt="{{ social.altText }}" />
+      @for (social of info.socials; track social.id) {
+        <div>
+          <img src="{{ social.iconPath }}" alt="{{ social.altText }}" />
 
-        <span>{{ social.handler }}</span>
-      </div>
-    }
-  </section>
+          <span>{{ social.handler }}</span>
+        </div>
+      }
+    </section>
+  </div>
 
   <section class="how-to-help">
     <h2>HOW YOU CAN HELP</h2>

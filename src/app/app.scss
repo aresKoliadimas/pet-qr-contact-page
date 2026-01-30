@@ -102,73 +102,79 @@
       }
     }
 
-    > .call-me-btn {
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: $size-3x;
-      background-color: $color-primary;
-      color: $text-primary;
-      border: none;
-      border-radius: $border-radius-lg;
-      padding: $size-3x $size-6x;
-      font-size: $size-8x;
-      box-shadow: $shadow-md;
-      cursor: pointer;
-      transition:
-        background-color 0.3s ease,
-        box-shadow 0.3s ease;
-
-      > img {
-        width: 40px;
-        height: 40px;
-      }
-
-      &:hover {
-        box-shadow: $shadow-xl;
-      }
-
-      &:active {
-        background-color: $color-primary-darker;
-        box-shadow: $shadow-sm;
-      }
-    }
-
-    > .or-separator {
-      text-align: center;
-      font-size: $size-4x;
-      font-weight: bold;
-    }
-
-    > .social-media-section {
+    > .contact-wrapper {
       display: flex;
       flex-direction: column;
-      gap: $size-4x;
+      gap: $size-6x;
 
-      > h3 {
-        margin: 0;
-        font-size: $size-3x;
-        color: $text-secondary;
-        text-align: center;
-      }
-
-      > .social {
+      > button {
+        margin: 0 auto;
         display: flex;
         align-items: center;
-        gap: $size-4x;
-        background-color: $bg-secondary;
-        padding: $size-2x;
-        border-radius: $border-radius-md;
-        border: $border-light;
+        gap: $size-3x;
+        background-color: $color-primary;
+        color: $text-primary;
+        border: none;
+        border-radius: $border-radius-lg;
+        padding: $size-3x $size-6x;
+        font-size: $size-8x;
+        box-shadow: $shadow-md;
+        cursor: pointer;
+        transition:
+          background-color 0.3s ease,
+          box-shadow 0.3s ease;
 
         > img {
-          width: 24px;
-          height: 24px;
+          width: 40px;
+          height: 40px;
         }
 
-        > span {
-          font-size: $size-4x;
-          color: $text-primary;
+        &:hover {
+          box-shadow: $shadow-xl;
+        }
+
+        &:active {
+          background-color: $color-primary-darker;
+          box-shadow: $shadow-sm;
+        }
+      }
+
+      > span {
+        text-align: center;
+        font-size: $size-4x;
+        font-weight: bold;
+      }
+
+      > section {
+        display: flex;
+        flex-direction: column;
+        gap: $size-4x;
+
+        > h3 {
+          margin: 0;
+          font-size: $size-3x;
+          color: $text-secondary;
+          text-align: center;
+        }
+
+        > div {
+          display: flex;
+          align-items: center;
+          gap: $size-4x;
+          background-color: $bg-secondary;
+          padding: $size-2x;
+          border-radius: $border-radius-md;
+          border: $border-light;
+
+          > img {
+            width: 24px;
+            height: 24px;
+          }
+
+          > span {
+            font-size: $size-4x;
+            color: $text-primary;
+          }
         }
       }
     }
