@@ -10,13 +10,29 @@
     margin: 0 auto;
     width: 100%;
     max-width: 314px;
-    color: rgba(53, 158, 255, 0.8);
+    color: $color-primary;
     height: 50px;
     padding-top: 3rem;
-    background-color: rgb(15 25 35 / 0.8);
+    background-color: $bg-header;
     position: sticky;
     top: 0;
     backdrop-filter: blur(12px);
+
+    > div {
+      display: flex;
+      align-items: center;
+      gap: $size-2x;
+
+      > img {
+        width: 40px;
+        height: 40px;
+      }
+
+      > span {
+        font-size: $size-6x;
+        font-weight: bold;
+      }
+    }
   }
 
   > main {
@@ -25,7 +41,7 @@
     max-width: 314px;
     display: flex;
     flex-direction: column;
-    gap: $size-8x;
+    gap: $size-12x;
 
     > .my-human-section {
       > img {
