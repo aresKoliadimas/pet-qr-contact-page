@@ -1,0 +1,41 @@
+@use '../styles.scss' as *;
+
+:host {
+  background-color: $bg-primary;
+  display: flex;
+  flex-direction: column;
+  gap: $size-12x;
+
+  > header {
+    margin: $size-6x auto 0;
+    width: 100%;
+    max-width: 314px;
+    color: $color-primary;
+  }
+
+  > main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 314px;
+
+    > section {
+      > img {
+        width: 100%;
+        border-radius: $border-radius-md;
+      }
+
+      > h1 {
+        text-align: center;
+        margin: $size-4x 0 0;
+        color: $text-primary;
+      }
+
+      > p {
+        text-align: center;
+        margin: $size-3x 0 0;
+        color: $text-secondary;
+        font-size: $size-4x;
+      }
+    }
+  }
+}
