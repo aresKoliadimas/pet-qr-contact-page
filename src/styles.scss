@@ -50,7 +50,8 @@ $text-primary: $color-white;
 $text-secondary: rgb(255, 255, 255, 0.5);
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Zain', sans-serif;
+  line-height: 20px;
   margin: 0;
   padding: 0;
   background-color: $bg-primary;
