@@ -32,5 +32,17 @@
 
     <span>Call my human</span>
   </button>
+
+  <section class="social-media-section">
+    <h3>MESSAGE VIA SOCIAL MEDIA</h3>
+
+    @for (social of info.socials; track social.id) {
+      <div class="social">
+        <img src="{{ social.iconPath }}" alt="{{ social.altText }}" />
+
+        <span>{{ social.handler }}</span>
+      </div>
+    }
+  </section>
 </main>
 <footer></footer>
