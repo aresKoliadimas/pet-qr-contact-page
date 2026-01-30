@@ -172,5 +172,47 @@
         }
       }
     }
+
+    > .how-to-help {
+      display: flex;
+      flex-direction: column;
+      gap: $size-4x;
+
+      > h2 {
+        margin: 0 0 $size-2x 0;
+        font-size: $size-4x;
+        color: $text-secondary;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: $size-4x;
+        background-color: $bg-secondary;
+        padding: $size-4x;
+        border-radius: $border-radius-md;
+        border: $border-dark;
+
+        > img {
+          width: 32px;
+          height: 32px;
+        }
+
+        > div {
+          display: flex;
+          flex-direction: column;
+          gap: $size-2x;
+
+          > span {
+            font-size: $size-5x;
+          }
+
+          > small {
+            font-size: $size-3x;
+            color: $text-secondary;
+          }
+        }
+      }
+    }
   }
 }
