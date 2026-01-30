@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+// Spacing variables (based on 0.25rem increments)
+$size-1x: 0.25rem;
+$size-2x: 0.5rem;
+$size-3x: 0.75rem;
+$size-4x: 1rem;
+$size-5x: 1.25rem;
+$size-6x: 1.5rem;
+$size-7x: 1.75rem;
+$size-8x: 2rem;
+$size-12x: 3rem;
+$size-16x: 4rem;
+$size-20x: 5rem;
+$size-24x: 6rem;
+
+// Color palette (base: rgb(53 158 255 / 0.8))
+$color-primary: rgb(53 158 255 / 0.8);
+$color-primary-light: rgb(135 200 255 / 0.9);
+$color-primary-lighter: rgb(200 230 255 / 0.95);
+$color-primary-dark: rgb(25 110 220 / 0.9);
+$color-primary-darker: rgb(10 70 180 / 0.95);
+
+// Neutral colors for contrast
+$color-white: rgb(255, 255, 255, 1);
+$color-black: rgb(0, 0, 0, 1);
+$color-gray-light: #f5f5f5;
+$color-gray-medium: #cccccc;
+$color-gray-dark: #333333;
+
+// Border styles
+$border-primary: 2px solid $color-primary;
+$border-light: 1px solid $color-primary-lighter;
+$border-dark: 3px solid $color-primary-dark;
+$border-radius-sm: $size-2x;
+$border-radius-md: $size-4x;
+$border-radius-lg: $size-6x;
+
+// Background colors
+$bg-primary: rgba(15, 25, 35, 1);
+
+// Shadow styles (accessible)
+$shadow-sm: 0 1px 2px rgba(53, 158, 255, 0.1);
+$shadow-md: 0 4px 6px rgba(53, 158, 255, 0.15);
+$shadow-lg: 0 8px 12px rgba(53, 158, 255, 0.2);
+$shadow-xl: 0 12px 24px rgba(53, 158, 255, 0.25);
+
+// Text colors
+$text-primary: $color-white;
+$text-secondary: rgb(255, 255, 255, 0.5);
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-primary;
+  color: $text-primary;
+}
