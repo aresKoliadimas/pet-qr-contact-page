@@ -63,7 +63,7 @@
       }
     }
 
-    .my-location-section {
+    > .my-location-section {
       display: flex;
       align-items: center;
       gap: $size-4x;
@@ -102,7 +102,7 @@
       }
     }
 
-    .call-me-btn {
+    > .call-me-btn {
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -134,7 +134,13 @@
       }
     }
 
-    .social-media-section {
+    > .or-separator {
+      text-align: center;
+      font-size: $size-4x;
+      font-weight: bold;
+    }
+
+    > .social-media-section {
       display: flex;
       flex-direction: column;
       gap: $size-4x;
