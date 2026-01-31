@@ -9,8 +9,7 @@ export class App {
   public readonly info = {
     petName: 'Majin Zak',
     homeArea: 'Thessaloniki, Analipsi',
-    countryPrefix: '+30',
-    phone: 6947627851,
+    phone: '+306947627851',
     socials: [
       {
         id: 'instagram',
@@ -27,17 +26,7 @@ export class App {
     ],
   };
 
-  private get _phoneWithPrefix(): string {
-    let phone = String(this.info.phone).replace(/\D/g, '');
-
-    if (!phone.startsWith('+') && !phone.startsWith('00')) {
-      phone = `${this.info.countryPrefix}${phone}`;
-    }
-
-    return phone;
-  }
-
   public callMe(): void {
-    window.open(`tel:${encodeURIComponent(this._phoneWithPrefix)}`, '_self');
+    window.open(`tel:${encodeURIComponent(this.info.phone)}`, '_self');
   }
 }
