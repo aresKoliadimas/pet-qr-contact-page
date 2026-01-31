@@ -20,7 +20,7 @@
 
     > div {
       display: flex;
-      align-items: center;
+      align-items: baseline;
       gap: $size-2x;
 
       > img {
@@ -91,7 +91,7 @@
         > p:nth-child(2) {
           margin: 0;
           color: $text-primary;
-          font-size: $size-4x;
+          font-size: $size-5x;
         }
 
         > p:nth-child(3) {
@@ -117,7 +117,7 @@
         border: none;
         border-radius: $border-radius-lg;
         padding: $size-3x $size-6x;
-        font-size: $size-8x;
+        font-size: $size-7x;
         box-shadow: $shadow-md;
         cursor: pointer;
         transition:
