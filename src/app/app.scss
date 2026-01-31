@@ -12,7 +12,7 @@
     max-width: 314px;
     color: $color-primary;
     height: 50px;
-    padding-top: 3rem;
+    padding: 3rem 0 $size-4x;
     background-color: $bg-header;
     position: sticky;
     top: 0;
@@ -29,7 +29,7 @@
       }
 
       > span {
-        font-size: $size-6x;
+        font-size: $size-8x;
         font-weight: bold;
       }
     }
