@@ -158,10 +158,11 @@
           text-align: center;
         }
 
-        > div {
+        > a {
+          cursor: pointer;
+          text-decoration: none;
           display: flex;
           align-items: center;
-          gap: $size-4x;
           background-color: $bg-secondary;
           padding: $size-2x;
           border-radius: $border-radius-md;
@@ -170,11 +171,13 @@
           > img {
             width: 24px;
             height: 24px;
+            margin-right: $size-4x;
           }
 
           > span {
             font-size: $size-4x;
             color: $text-primary;
+            margin-right: auto;
           }
         }
       }

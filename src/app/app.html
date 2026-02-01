@@ -2,7 +2,7 @@
   <div>
     <img src="/assets/paw-hi.png" alt="paw print icon" />
 
-    <span>Hi! I'm {{ info.petName }}</span>
+    <span>Hi! I'm {{ petName }}</span>
   </div>
 </header>
 
@@ -21,7 +21,7 @@
     <section>
       <h3>HOME AREA</h3>
 
-      <p>{{ info.homeArea }}</p>
+      <p>{{ homeArea }}</p>
 
       <p>If I'm far from here, I'm definitely lost.</p>
     </section>
@@ -39,12 +39,14 @@
     <section>
       <h3>MESSAGE VIA SOCIAL MEDIA</h3>
 
-      @for (social of info.socials; track social.id) {
-        <div>
+      @for (social of socials; track social.id) {
+        <a [href]="social.socialMediaUrl" target="_blank" rel="noopener noreferrer">
           <img src="{{ social.iconPath }}" alt="{{ social.altText }}" />
 
           <span>{{ social.handler }}</span>
-        </div>
+
+          <img src="/assets/redirect.png" alt="redirect icon" />
+        </a>
       }
     </section>
   </div>
