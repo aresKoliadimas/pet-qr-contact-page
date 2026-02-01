@@ -113,9 +113,9 @@
         display: flex;
         align-items: center;
         gap: $size-3x;
-        background-color: $color-primary;
+        background-color: $color-call-dark;
         color: $text-primary;
-        border: none;
+        border: $border-call;
         border-radius: $border-radius-lg;
         padding: $size-3x $size-6x;
         font-size: $size-7x;
@@ -135,8 +135,8 @@
         }
 
         &:active {
-          background-color: $color-primary-darker;
-          box-shadow: $shadow-sm;
+          background-color: $color-call;
+          box-shadow: $shadow-xl;
         }
       }
 

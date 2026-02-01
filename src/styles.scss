@@ -19,6 +19,15 @@ $color-primary-lighter: rgb(200 230 255 / 0.95);
 $color-primary-dark: rgb(25 110 220 / 0.9);
 $color-primary-darker: rgb(10 70 180 / 0.95);
 
+// Call button (green) palette (harmonized with $color-primary)
+$color-call: rgb(50 200 120 / 0.9);
+$color-call-light: rgb(110 230 170 / 0.95);
+$color-call-dark: rgb(20 160 90 / 0.9);
+$color-call-darker: rgb(10 120 70 / 0.95);
+
+$border-call: 2px solid $color-call;
+$shadow-call: 0 0 8px rgba(50, 200, 120, 0.884);
+
 // Neutral colors for contrast
 $color-white: rgb(255, 255, 255, 1);
 $color-black: rgb(0, 0, 0, 1);
