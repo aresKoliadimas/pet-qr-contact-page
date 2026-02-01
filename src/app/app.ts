@@ -9,6 +9,8 @@ import { SocialMedia } from '../interfaces/social.interface';
 export class App {
   public readonly petName: string = 'Majin Zak';
   public readonly homeArea: string = 'Thessaloniki, Analipsi';
+  public readonly homeAreaMapUrl: string =
+    'https://www.google.com/maps/d/edit?mid=1Lnj4f3xSEo0SzV0_igCGdnj9aYRb8KE&usp=sharing';
   public readonly phoneNumber: string = '+306947627851';
   public readonly socials: SocialMedia[] = [
     {

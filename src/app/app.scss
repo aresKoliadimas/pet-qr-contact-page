@@ -65,17 +65,26 @@
     }
 
     > .my-location-section {
+      text-decoration: none;
       display: flex;
       align-items: center;
       gap: $size-4x;
       background-color: $bg-secondary;
-      padding: $size-4x;
+      padding: $size-2x;
       border-radius: $border-radius-md;
       border: $border-light;
 
       > img {
-        width: 40px;
-        height: 40px;
+        &:nth-child(1) {
+          width: 40px;
+          height: 40px;
+        }
+
+        &:nth-child(3) {
+          width: 24px;
+          height: 24px;
+          align-self: flex-start;
+        }
       }
 
       > section {

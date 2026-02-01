@@ -15,7 +15,7 @@
     <p>I am lost and looking for my home. Please help me get back safely.</p>
   </section>
 
-  <div class="my-location-section">
+  <a class="my-location-section" [href]="homeAreaMapUrl" target="_blank" rel="noopener noreferrer">
     <img src="/assets/location.png" alt="location marker" />
 
     <section>
@@ -25,7 +25,9 @@
 
       <p>If I'm far from here, I'm definitely lost.</p>
     </section>
-  </div>
+
+    <img src="/assets/redirect.png" alt="redirect icon" />
+  </a>
 
   <div class="contact-wrapper">
     <a [href]="'tel:' + phoneNumber">
