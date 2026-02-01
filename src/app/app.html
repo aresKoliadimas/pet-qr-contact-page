@@ -28,11 +28,11 @@
   </div>
 
   <div class="contact-wrapper">
-    <button (click)="callMe()">
+    <a [href]="'tel:' + phoneNumber">
       <img src="/assets/smartphone.png" alt="phone icon" />
 
       <span>Call my human</span>
-    </button>
+    </a>
 
     <span>OR</span>
 
